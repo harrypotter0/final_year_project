@@ -1,0 +1,27 @@
+{
+
+  "name" : "Youtube-Productivity",
+  "manifest_version" : 2,
+  "version" : "1.0.0",
+  "description" : "An extension designed to rate YouTube videos on its domain-wise content value and prevent us from distraction.",
+
+  "browser_action" :{
+    "default_icon" : "icons/logo.png"
+},
+
+  "content_scripts":[
+    {
+    "matches" : [
+      "https://www.youtube.com/*",
+      "http://www.youtube.com/*"
+    ],
+    "js" : [
+      "src/content.js"
+    ]
+  }
+  ],
+  "background":{
+    "scripts" : ["src/background.js"]
+  }
+
+}
