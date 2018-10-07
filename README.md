@@ -5,6 +5,7 @@
 ## Features
 * It prevents wastage of time by tagging videos on the basis of their content (currently).
 * Tagged videos can be used for recommendation system on You-Tube.
+* It generates percentage score about the educative content in the video, right now it's limited to text analysis of the comments present in the video. 
 
 ## Steps to use locally: (currently not available on chrome store)
 * Clone the repository `git clone https://github.com/harrypotter0/final_year_project`.
@@ -34,7 +35,10 @@
 
 [Demo](https://www.youtube.com/watch?v=WRNslLpvgkI)
 
+[Installation](https://www.youtube.com/watch?v=aVcd7gIa8hw)
+
 ## To-Do:
 * Extending for the tagging based on the comments. 
 * Adding more sub-categories.
 * Usuage of Resnet model and YOLO for vid-2-vid frame check and providing the quality score of the video.
+* Using video analysis for generating quality score of the video.
