@@ -32,7 +32,7 @@
 
 ## YouTube video
 
-[Demo](https://youtu.be/kVTM1EDWgec)
+[Demo](https://www.youtube.com/watch?v=WRNslLpvgkI)
 
 ## To-Do:
 * Extending for the tagging based on the comments. 
