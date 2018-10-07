@@ -14,4 +14,3 @@ function tabChange(tab, info,returnTab){
     }
     chrome.tabs.sendMessage(returnTab.id, msg);
 }
-
