@@ -30,9 +30,9 @@
 
 ![Demo-2](images/EV2.png)
 
-<!-- ## YouTube video
+## YouTube video
 
-[Demo](https://youtu.be/kVTM1EDWgec) -->
+[Demo](https://youtu.be/kVTM1EDWgec)
 
 ## To-Do:
 * Extending for the tagging based on the comments. 
