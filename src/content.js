@@ -8,14 +8,14 @@ function getTitles(){
   for(elm of a_tags){
     if (elm.id == "video-title"){
       var i =  getrating(elm.title.toLowerCase());
-      elm.innerHTML = ("YV-> " + i.toString() + "% ").bold().big() + "    " + elm.title;
+      elm.innerHTML = ("EV-> " + i.toString() + "% ").bold().big() + "    " + elm.title;
     }
   }
   let b_tags = document.getElementsByTagName('span');
   for(elm of b_tags){
     if (elm.id == "video-title"){
       var i =  getrating(elm.title.toLowerCase());
-      elm.innerHTML = ("YV-> "+ i.toString() + "% ").bold().big() + "    " + elm.title;
+      elm.innerHTML = ("EV-> "+ i.toString() + "% ").bold().big() + "    " + elm.title;
     }
   }
 }

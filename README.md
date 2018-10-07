@@ -26,9 +26,9 @@
 
 * Working
 
-![Demo-1](images/PV1.png)
+![Demo-1](images/EV1.png)
 
-![Demo-2](images/PV2.png)
+![Demo-2](images/EV2.png)
 
 <!-- ## YouTube video
 
