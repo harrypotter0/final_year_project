@@ -33,8 +33,6 @@ pipe
 ostensibly
 recognize
 untruth
-feather boa
-hulk
 surface
 ill fame
 priest
@@ -113,7 +111,6 @@ Holy Writ
 anchor
 consider
 style
-Mrs. Henry Wood
 D.P.R.K.
 yielding
 examine
@@ -7925,7 +7922,6 @@ mesh
 bejewel
 India
 electron orbit
-Richard Morris Hunt
 pedal
 glum
 military installation
@@ -7973,7 +7969,6 @@ flick
 repossess
 bake
 coquetry
-US Army
 methodicalness
 register
 subsist
@@ -7997,7 +7992,6 @@ pinch
 public treasury
 geologic process
 flying
-paroxysm
 brass section
 family tree
 chance
@@ -8010,24 +8004,16 @@ be sick
 enlist
 dramatic play
 bear down
-liveliness
-express joy
-philander
-Felis catus
-taste perception
 story
 disassemble
 angular position
 summary
-curb
-kick upstairs
 work shift
 preoccupancy
 interrelate
 counterpart
 while
 zip
-pervert
 rick
 payoff
 readying
@@ -8071,24 +8057,9 @@ where
 location
 earth
 continent
-planet
-space
-paint
 answer
 question
-"
 help
 health
-camera
-$
-%
-&
-*
-+
--
-:
-|
-/
-\
 beginner
 method

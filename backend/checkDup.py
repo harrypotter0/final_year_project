@@ -9,5 +9,3 @@ with open("wordList.txt", "w") as file:
     for line in tempSet:
         file.write(line)
         file.write('\n')
-
-
