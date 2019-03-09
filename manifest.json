@@ -16,6 +16,7 @@
       "http://www.youtube.com/*"
     ],
     "js" : [
+      // "src/content.1.js"
       "src/content.js"
     ]
   }

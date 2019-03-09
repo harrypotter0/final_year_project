@@ -7,7 +7,7 @@ function scrollevent(){getTitles();}
 
 // Rating Calculation 
 function getrating(title){
-  var rate_count = 0;
+  var rate_count = 1;
   var titleArray = title.split(/[ ,]+/);
   var matching_words = ' ';
   var i;
@@ -63,8 +63,8 @@ function read(){
     if(xmlhttp.status == 200 && xmlhttp.readyState == 4){}
   };
   // Send request to server
-  // xmlhttp.open("GET","src/wordList.txt" ,true);  
-  xmlhttp.open("GET","https://raw.githubusercontent.com/harrypotter0/final_year_project/master/src/wordList.txt" ,true);
+  xmlhttp.open("GET","https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/15efb4f3d1332867da31e88b83b17f96ecf34837/wordlist.txt" ,true);
+  // xmlhttp.open("GET","https://raw.githubusercontent.com/harrypotter0/final_year_project/master/backend/wordlist.txt" ,true);
   xmlhttp.send();
   return this;
 }

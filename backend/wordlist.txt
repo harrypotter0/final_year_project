@@ -17,11 +17,13 @@ pursue
 wind
 burthen
 restrict
-rule of grammar
+rule
+grammar
 slyness
 certify
 pursual
-mount up
+mount 
+up
 immobilise
 coating
 affectedness
@@ -30,11 +32,8 @@ converse
 scold
 funds
 pipe
-ostensibly
 recognize
 untruth
-feather boa
-hulk
 surface
 ill fame
 priest
@@ -589,7 +588,6 @@ provider
 travel
 flirting
 lay down
-beautify
 surprise attack
 issue forth
 aid
@@ -8076,25 +8074,13 @@ space
 paint
 answer
 question
-"
 help
 health
 camera
-$
-%
-&
-*
-+
--
-:
-|
-/
-\
 beginner
 method
 lecture
 lectures 
-GATE 
 answer
 and 
 algorithms
@@ -8109,3 +8095,18 @@ advise
 learn
 study 
 theory 
+gate
+rank
+course
+aspirants
+advise
+preparation
+syllabus
+CS 
+machine 
+learning 
+artificial 
+intelligence
+computation
+theory
+automata
