@@ -5,9 +5,13 @@ var wordList = read();
 addEventListener('scroll',scrollevent);
 function scrollevent(){getTitles();}
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 // Rating Calculation 
 function getrating(title){
-  var rate_count = 0;
+  var rate_count = 1;
   var titleArray = title.split(/[ ,]+/);
   var matching_words = ' ';
   var i;
@@ -23,11 +27,23 @@ function getrating(title){
   console.log("Rating of "+title+" is "+tempRate+"\n");
   console.log("Matching String "+matching_words+"\n");
   console.log("No of Matching Words is "+rate_count+"\n");
-  console.log("No of Words is "+titleArray.length+"\n");
-  if (tempRate > 21){
-    tempRate += 30;
+  console.log("No of Words is "+titleArray.length+"\n");  
+  
+  if (tempRate > 20 && tempRate<50){
+    tempRate += 50;
+    if (tempRate == 100){
+      var btn = document.createElement("BUTTON");   // Create a <button> element
+      btn.innerHTML = "NOT EDUCATIVE CONTENT"; 
+      var property = document.getElementById(btn);
+      property.style.backgroundColor = "#FF0000	";
+      template = (getRandomInt(9));
+    }
     if (tempRate >= 100){
-      tempRate = 94.1;
+      var btn = document.createElement("BUTTON");   // Create a <button> element
+      btn.innerHTML = "EDUCATIVE CONTENT"; 
+      var property = document.getElementById(btn);
+      property.style.backgroundColor = "#00FF00";
+      tempRate = 87.1;
     }
     return Math.round(tempRate);
   }
@@ -35,10 +51,6 @@ function getrating(title){
     return Math.round(tempRate);
   }
 }
-var txtFile = "wordlist.txt";
-var file = new File([""],txtFile);
-
-file.open("a"); 
 
 // Get Title of Videos
 function getTitles(){
@@ -46,11 +58,8 @@ function getTitles(){
   let a_tags = document.getElementsByTagName('a');
   for(elm of a_tags){
     if (elm.id == "video-title"){
-      var ii;
-      for(ii in elm.title.toLowerCase()){
-        file.writeln(ii.toString());
-      }
       var i =  getrating(elm.title.toLowerCase());
+      console.log(elm.title.toLowerCase()+"---"+i);
       elm.innerHTML = ("EV-> " + i.toString() + "% ").bold().big() + "    " + elm.title;
     }
   }
@@ -58,16 +67,12 @@ function getTitles(){
   let b_tags = document.getElementsByTagName('span');
   for(elm of b_tags){
     if (elm.id == "video-title"){
-      var ii;
-      for(ii in elm.title.toLowerCase()){
-        file.writeln(ii.toString());
-      }
       var i =  getrating(elm.title.toLowerCase());
+      console.log(elm.title.toLowerCase()+"==="+i);
       elm.innerHTML = ("EV-> "+ i.toString() + "% ").bold().big() + "    " + elm.title;
     }
   }
 }
-file.close();
 
 function read(){
   var txt = '';
@@ -76,11 +81,11 @@ function read(){
     if(xmlhttp.status == 200 && xmlhttp.readyState == 4){}
   };
   // Send request to server
-  xmlhttp.open("GET","https://raw.githubusercontent.com/harrypotter0/final_year_project/master/backend/wordlist.txt" ,true);
+  var link = "https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/3e267639b2d56fe4cd24b906042eca0adc291d9a/wordlist.txt";
+  xmlhttp.open("GET", link, true);
   xmlhttp.send();
   return this;
 }
-
 
 chrome.runtime.onMessage.addListener(message);
 function message(msg,sender,sendResponse){
