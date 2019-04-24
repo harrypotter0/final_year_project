@@ -48,9 +48,10 @@ function getTitles(){
         i = i.toLowerCase();
         // console.log(i+",");
         for(j of wordList){
+          j = j.toLowerCase();
           if(i == j){
             rate_count += 1;
-            matching_words += i;
+            matching_words += i+' ';
             break;
           }
         }
@@ -96,7 +97,7 @@ function read(){
     if(xmlhttp.status == 200 && xmlhttp.readyState == 4){}
   };
   // Send request to server
-  var link = "https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/b0092319c16460bd9b434b4d4a7c80d1eff313f5/wordlist.txt";
+  var link = "https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/23bcf66b4403bb30c14b0f3c9f3f43175150c6f3/wordlist.txt";
   xmlhttp.open("GET", link, true);
   xmlhttp.send();
   return this;

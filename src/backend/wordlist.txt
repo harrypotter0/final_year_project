@@ -3,7 +3,6 @@ grade
 toppers
 strategy
 current 
-affairs
 UPSC
 SSC
 GATE
@@ -161,3 +160,20 @@ samvidhaan
 programming
 competitive
 competition
+automata
+theory
+computation
+compiler
+design
+operating
+solution
+method
+threads
+linear algebra
+calculus
+machine learning
+course
+time management
+career
+guidance
+dbms
