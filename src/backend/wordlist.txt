@@ -9,7 +9,6 @@ SSC
 GATE
 study
 arrays
-data
 structure
 algorithms
 array
@@ -94,7 +93,6 @@ ZIP (file format)
 Active Window
 Access
 Adapter
-digital
 image 
 processing
 AKTU
@@ -157,3 +155,9 @@ sbi
 po
 study
 generators
+niet
+algo 
+samvidhaan
+programming
+competitive
+competition
