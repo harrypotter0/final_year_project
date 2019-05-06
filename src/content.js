@@ -59,7 +59,8 @@ function getTitles(){
 
       // console.log("TITLE>LENGTH: "+ title.split(/(\s+)/).length);
       tempRate = rate_count / titleArray.length * 100;
-      if(tempRate>0){
+      tempRate +=50;
+      if(tempRate>50){
         console.log("Rating of "+title+" is "+tempRate+"\n");
         console.log("Matching String ==> "+matching_words+"\n");
         console.log("No of Matching Words is ==> "+rate_count+"\n");
@@ -67,7 +68,7 @@ function getTitles(){
         // console.log("Title split into array ==> "+titleArray.toString());
       }
 
-      if(tempRate>0){
+      if(tempRate>50){
         var str = new String("EDUCATIVE");
       }
       else{
@@ -97,7 +98,7 @@ function read(){
     if(xmlhttp.status == 200 && xmlhttp.readyState == 4){}
   };
   // Send request to server
-  var link = "https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/23bcf66b4403bb30c14b0f3c9f3f43175150c6f3/wordlist.txt";
+  var link = "https://gist.githubusercontent.com/harrypotter0/d235733379d4994fca01a52e36fc5be9/raw/c49e25f6cd76a3a7de85b8a0adf4dbbd69ede572/wordlist.txt";
   xmlhttp.open("GET", link, true);
   xmlhttp.send();
   return this;
